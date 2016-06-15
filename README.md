@@ -2,7 +2,7 @@
 
 ### Description
 
-`test-rdtsc` dows some basic sanity tests of the
+`test-rdtsc` does some basic sanity tests of the
 `rdtsc` and `rdtscp` instructions.
 
 It tests the combination of hardware and software
@@ -17,7 +17,9 @@ work correctly.
 
 On a hosted system, there is also a scaled high-resolution time
 that delivers timestamps in standard units of time.
-On modern Linux systems, that would be xxx, which delivers timestamps in units of seconds and nanoseconds.  This can be used to guess the frequency of the TSC.
+On modern Linux systems, that would be `clock_gettimei()`,
+which delivers timestamps in units of seconds and nanoseconds.
+This can be used to guess the frequency of the TSC.
 
 It is another sanity test.
 Since it involves some circular reasoning,
