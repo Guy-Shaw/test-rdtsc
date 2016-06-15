@@ -17,7 +17,7 @@ work correctly.
 
 On a hosted system, there is also a scaled high-resolution time
 that delivers timestamps in standard units of time.
-On modern Linux systems, that would be `clock_gettimei()`,
+On modern Linux systems, that would be `clock_gettime()`,
 which delivers timestamps in units of seconds and nanoseconds.
 This can be used to guess the frequency of the TSC.
 
